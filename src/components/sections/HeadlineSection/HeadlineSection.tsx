@@ -1,7 +1,7 @@
 import styles from "./HeadlineSection.module.scss";
-import ArrowDownEllipse from "~/assets/svg/arrow-down-ellipse.svg";
+import { ArrowDownEllipse } from "~/assets/svg";
 
-export default function HeadlineSection() {
+export const HeadlineSection = () => {
   return (
     <section className={styles.headlineSection}>
       <div className={styles.headerText}>

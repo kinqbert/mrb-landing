@@ -1,10 +1,12 @@
 import "./App.scss";
-import HeadlineSection from "./components/sections/HeadlineSection/HeadlineSection";
+import { HeadlineSection } from "./components/sections";
+import { ProblemsSection } from "./components/sections/ProblemsSection";
 
 function App() {
   return (
     <div className="container">
       <HeadlineSection />
+      <ProblemsSection />
     </div>
   );
 }
