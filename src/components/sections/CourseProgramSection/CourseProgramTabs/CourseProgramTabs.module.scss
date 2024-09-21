@@ -1,0 +1,136 @@
+@import "../../../../styles/colors.scss";
+
+$tabVisibleHeight: 30px;
+$tabContentTopOffset: 90px;
+
+$tabWidthWithPadding: 45px;
+$textStartHorizontalOffset: 48px;
+$textStartVerticalOffset: 16px;
+
+.tabsWrapper {
+  margin-top: $tabVisibleHeight;
+  position: relative;
+
+  pointer-events: none;
+
+  .tab {
+    pointer-events: auto;
+  }
+}
+
+.tabsList {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+
+  top: -$tabVisibleHeight;
+  left: 50%;
+  transform: translateX(-50%);
+
+  position: absolute;
+}
+
+.tab {
+  width: 39px;
+  height: 110px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 4px 7px 14px 7px;
+
+  border-radius: 30px;
+
+  background-color: $main-blue;
+
+  color: $white;
+}
+
+.tabNumber {
+  font-family: "Michroma";
+  font-size: 20px;
+}
+
+.tabTitle {
+  font-family: "Montserrat Alternates";
+  font-size: 20px;
+
+  transform: rotate(180deg);
+
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.tabContent {
+  width: 340px;
+  height: 250px;
+
+  margin: 0 auto;
+
+  position: relative;
+  z-index: 1;
+}
+
+.contentTitle {
+  width: 135px;
+
+  color: $black;
+  font-family: "Open Sans Condensed";
+  font-size: 20px;
+  font-weight: 300;
+
+  position: absolute;
+
+  top: $textStartVerticalOffset;
+
+  @for $i from 1 through 3 {
+    &--#{$i} {
+      left: $textStartHorizontalOffset + $i * $tabWidthWithPadding;
+      text-align: left;
+    }
+  }
+
+  @for $i from 4 through 6 {
+    &--#{$i} {
+      right: $textStartHorizontalOffset + (7 - $i) * $tabWidthWithPadding;
+      text-align: right;
+    }
+  }
+}
+
+.contentTitle1 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tabTextContent {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  padding: $tabContentTopOffset 20px 20px 20px;
+}
+
+.contentText {
+  color: $text__grey;
+  text-align: center;
+  font-family: "Open Sans Condensed";
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.tabContentBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  z-index: -1;
+
+  filter: drop-shadow(0px -2px 4px rgba(0, 0, 0, 0.25));
+}

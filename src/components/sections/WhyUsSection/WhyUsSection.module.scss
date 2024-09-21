@@ -1,0 +1,19 @@
+@import "../../../styles/colors.scss";
+
+.whyUsSection {
+  margin-top: 18px;
+}
+
+.sectionHeader {
+  margin-inline: 60px;
+
+  color: $white;
+  text-align: center;
+  font-family: "Yanone Kaffeesatz";
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.accordionWrapper {
+  margin-top: 4px;
+}

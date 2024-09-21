@@ -1,0 +1,19 @@
+@import "../../../styles/colors.scss";
+
+.courseProgramSection {
+  margin-top: 20px;
+  padding-inline: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.headerText {
+  color: $white;
+  background-color: $black;
+  text-align: right;
+  font-family: Raleway;
+  font-size: 32px;
+  font-weight: 300;
+}

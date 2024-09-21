@@ -5,6 +5,9 @@ import {
   moneyMouthEmoji,
   moneyWithWingsEmoji,
   starStruckEmoji,
+  crownEmoji,
+  nailsEmoji,
+  officeWomanEmoji,
 } from "./emojis";
 
 export {
@@ -13,4 +16,7 @@ export {
   moneyMouthEmoji,
   moneyWithWingsEmoji,
   starStruckEmoji,
+  crownEmoji,
+  nailsEmoji,
+  officeWomanEmoji,
 };

@@ -7,11 +7,11 @@ interface Props {
 
 export const FeatureListItem = ({ title, icon }: Props) => {
   return (
-    <div className={styles.featureListItem}>
+    <li className={styles.featureListItem}>
       <div className={styles.imageWrapper}>
         <img className={styles.image} src={icon} alt="emoji" />
       </div>
       <h3 className={styles.title}>{title}</h3>
-    </div>
+    </li>
   );
 };

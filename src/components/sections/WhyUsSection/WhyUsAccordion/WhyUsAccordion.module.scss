@@ -1,0 +1,64 @@
+@import "../../../../styles/colors.scss";
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-inline: 10px;
+}
+
+.accordionItem {
+  border-radius: 20px;
+  background-color: $main-blue;
+
+  &.accordionItemActive {
+    & .accordionItemContent {
+      max-height: 155px;
+    }
+  }
+}
+
+.accordionItemHeader {
+  padding: 16px 10px;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 20px;
+  background-color: $main-blue;
+
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.accordionItemTitle {
+  flex: 1;
+
+  margin-inline: 20px;
+
+  text-align: center;
+  color: $white;
+  text-align: center;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+}
+
+.accordionItemNumber {
+  color: $white;
+  font-family: "Michroma";
+  font-size: 24px;
+}
+
+.accordionItemContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s linear;
+}
+
+.accordionItemText {
+  padding: 10px;
+
+  color: $text__grey;
+  text-align: center;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+}
