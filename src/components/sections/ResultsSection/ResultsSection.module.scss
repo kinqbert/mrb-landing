@@ -1,0 +1,77 @@
+@import "../../../styles/colors.scss";
+
+$circle-size: 15px;
+$radius-size: 50px;
+
+.resultsSection {
+  margin-top: 24px;
+
+  padding-inline: 15px;
+}
+
+.headerText {
+  color: $black;
+  font-family: "Open Sans Condensed";
+  font-size: 24px;
+  text-align: left;
+  font-weight: 300;
+}
+
+.topLine {
+  width: calc(100% - $radius-size - 6px);
+  height: 40px;
+
+  margin-top: 12px;
+  margin-left: 10px;
+
+  border: 1px dashed $main-grey;
+  border-top: none;
+  border-right: none;
+  border-bottom-left-radius: 40px;
+
+  position: relative;
+}
+
+.topCircle {
+  width: $circle-size;
+  height: $circle-size;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 2;
+
+  border-radius: 50%;
+  border: 1px solid $main-grey;
+  background-color: $white;
+}
+
+.bottomLine {
+  width: $radius-size;
+  height: 150px;
+
+  margin-top: -1px;
+
+  border-top-left-radius: 50px;
+  border: 1px dashed $main-grey;
+  border-right: none;
+  border-bottom: none;
+
+  position: relative;
+}
+
+.bottomRectangle {
+  width: 6px;
+  height: 6px;
+
+  position: absolute;
+  left: -1px;
+  bottom: 0;
+
+  transform: translate(-50%, 50%) rotate(45deg);
+
+  background-color: $main-grey;
+}

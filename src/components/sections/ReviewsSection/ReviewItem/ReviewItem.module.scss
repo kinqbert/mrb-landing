@@ -1,0 +1,49 @@
+@import "../../../../styles/colors.scss";
+
+.reviewItem {
+  padding: 10px;
+
+  flex: 1;
+
+  border-radius: 20px;
+  border: 1px solid #c1c9f2;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  position: relative;
+
+  &::after {
+    content: "";
+
+    background: rgba(255, 255, 255, 0.33);
+    backdrop-filter: blur(20px);
+  }
+}
+
+.headlineWrapper {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.reviewerName {
+  color: $black;
+  font-family: "Open Sans Condensed";
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.reviewText {
+  margin-top: 4px;
+  
+  color: $black;
+  text-align: left;
+  font-family: "Open Sans Condensed";
+  font-size: 12px;
+  font-weight: 300;
+}

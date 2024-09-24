@@ -1,6 +1,6 @@
 import PhoneIcon from "./phone-icon.svg";
 
-import { ArrowLeft, ArrowDownEllipse } from "./arrows";
+import { ArrowLeft, ArrowDownEllipse, AccordionArrow } from "./arrows";
 
 import { HalfEllipseRight } from "./halfEllipses";
 
@@ -22,6 +22,7 @@ export {
   Tab6,
   ArrowLeft,
   ArrowDownEllipse,
+  AccordionArrow,
   PhoneIcon,
   HalfEllipseRight,
   BottomLeftEllipseCorner,
