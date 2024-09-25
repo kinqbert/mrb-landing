@@ -1,4 +1,4 @@
-import styles from "./App.module.scss";
+import "./App.scss";
 import { HeadlineSection } from "./components/sections";
 import { ProblemsSection } from "./components/sections";
 import { TargetAudienceSection } from "./components/sections";
@@ -11,7 +11,7 @@ import { TicketSection } from "./components/sections";
 
 function App() {
   return (
-    <div className={styles.container}>
+    <div className="container">
       <HeadlineSection />
       <ProblemsSection />
       <TargetAudienceSection />

@@ -67,6 +67,7 @@
   position: absolute;
   bottom: 0;
   background-color: $white;
+  border-bottom: 1px solid rgba(217, 217, 217, 0.8);
   clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
