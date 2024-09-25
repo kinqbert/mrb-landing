@@ -3,3 +3,7 @@ export * from "./ProblemsSection";
 export * from "./TargetAudienceSection";
 export * from "./WhyUsSection";
 export * from "./CourseProgramSection";
+export * from "./FaqSection";
+export * from "./ResultsSection";
+export * from "./ReviewsSection";
+export * from "./TicketSection";

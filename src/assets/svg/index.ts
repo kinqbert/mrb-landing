@@ -1,5 +1,7 @@
 import PhoneIcon from "./phone-icon.svg";
 
+import { TicketLeft, TicketMiddle, TicketRight } from "./ticket";
+
 import { ArrowLeft, ArrowDownEllipse, AccordionArrow } from "./arrows";
 
 import { HalfEllipseRight } from "./halfEllipses";
@@ -20,6 +22,9 @@ export {
   Tab4,
   Tab5,
   Tab6,
+  TicketLeft,
+  TicketMiddle,
+  TicketRight,
   ArrowLeft,
   ArrowDownEllipse,
   AccordionArrow,
