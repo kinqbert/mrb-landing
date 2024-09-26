@@ -1,0 +1,78 @@
+@import "../../../styles/colors.scss";
+
+.inputFormWrapper {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.inputTitle {
+  margin-left: 6px;
+  margin-bottom: 2px;
+
+  text-align: center;
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.inputWrapper {
+  width: 100%;
+
+  position: relative;
+}
+
+.inputField {
+  width: 100%;
+  height: 30px;
+
+  padding-inline: 4px;
+
+  border: 1px solid $main-blue;
+  border-radius: 4px;
+  outline: none;
+
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: 300;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.16);
+  }
+}
+
+.inputError {
+  border: 1px solid red;
+}
+
+.inputFieldTel {
+  padding-left: 48px;
+}
+
+.phoneNumberOverlay {
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+
+  display: flex;
+  height: 14px;
+
+  align-items: center;
+}
+
+.ukraineFlag {
+  width: 14px;
+  height: 14px;
+
+  gap: 2px;
+}
+
+.numberStart {
+  text-align: center;
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: 300;
+}

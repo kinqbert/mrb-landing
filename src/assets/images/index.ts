@@ -10,6 +10,7 @@ import {
   crownEmoji,
   nailsEmoji,
   officeWomanEmoji,
+  ukraineFlagEmoji,
 } from "./emojis";
 
 export {
@@ -23,4 +24,5 @@ export {
   crownEmoji,
   nailsEmoji,
   officeWomanEmoji,
+  ukraineFlagEmoji,
 };
