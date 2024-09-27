@@ -1,7 +1,7 @@
 import { OrderForm } from "~/components/common/OrderForm";
+import { PurchaseButton } from "~/components/common/PurchaseButton";
 
 import styles from "./HeadlineSectionDesktop.module.scss";
-import { Link } from "react-router-dom";
 
 export const HeadlineSectionDesktop = () => {
   return (
@@ -16,11 +16,9 @@ export const HeadlineSectionDesktop = () => {
         </div>
       </div>
       <div className={styles.bottomBar}>
-        <Link to="order">
-          <button className={styles.purchaseButton}>
-            ДІЗНАТИСЯ УСІ СЕКРЕТИ
-          </button>
-        </Link>
+        <div className={styles.purchaseButtonWrapper}>
+          <PurchaseButton />
+        </div>
       </div>
     </section>
   );

@@ -1,4 +1,7 @@
-import { HeadlineSectionDesktop } from "../Desktop/HeadlineSectionDesktop";
+import {
+  HeadlineSectionDesktop,
+  TargetAudienceSectionDesktop,
+} from "../Desktop";
 import {
   CourseProgramSectionMobile,
   FaqSectionMobile,
@@ -48,6 +51,7 @@ export const MainPageContent = () => {
   return (
     <div className="container">
       <HeadlineSectionDesktop />
+      <TargetAudienceSectionDesktop />
     </div>
   );
 };
