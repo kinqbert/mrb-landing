@@ -16,5 +16,5 @@ export default defineConfig(({ mode }) => ({
       },
     },
   },
-  base: mode === "deploy" ? "/mrb-landing/" : "/",
+  base: mode === "production" ? "/mrb-landing/" : "/",
 }));

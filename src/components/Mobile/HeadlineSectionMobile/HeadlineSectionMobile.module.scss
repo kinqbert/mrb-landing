@@ -1,0 +1,117 @@
+@import "../../../styles/colors";
+
+.headlineSection {
+  height: 100vh;
+  padding-top: 14px;
+  position: relative;
+  overflow: hidden;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  position: absolute;
+  z-index: -2;
+  filter: blur(5.5px);
+  background-image: url("/src/assets/images/headline-background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.headline {
+  color: $white;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.subtext {
+  color: #f4ded0;
+  font-family: "Oswald";
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.photo {
+  height: 100%;
+  position: relative;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  background-image: url("/src/assets/images/person-image-nobg.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.backgroundBlob {
+  width: 70%;
+  height: 326.55px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  border-radius: 100%;
+  background: $main-pink;
+}
+
+.bottomContent {
+  width: 100%;
+  height: 130px;
+  position: absolute;
+  bottom: 0;
+  background-color: $white;
+  border-bottom: 1px solid rgba(217, 217, 217, 0.8);
+  clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.bottomContentWrapper {
+  position: relative;
+  padding: 42px 20px 0;
+
+  overflow: visible;
+}
+
+.bottomSubtext {
+  color: #737373;
+  font-family: "Philosopher";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 85.949%;
+}
+
+.bottomHeadline {
+  color: $main-pink;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 85.949%; 
+}
+
+.bottomIconBadgeWrapper {
+  width: 40px;
+  height: 40px;
+
+  padding: 4px;
+
+  position: absolute;
+  bottom: 95px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+
+  border-radius: 50%;
+
+  background-color: $white;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
