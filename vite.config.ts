@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   plugins: [react()],
   resolve: {
     alias: {
@@ -16,5 +16,5 @@ export default defineConfig({
       },
     },
   },
-  base: "/mrb-landing/",
-});
+  base: mode === "production" ? "/mrb-landing/" : "/",
+}));
