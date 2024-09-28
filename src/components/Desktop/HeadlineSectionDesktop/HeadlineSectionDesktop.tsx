@@ -5,10 +5,10 @@ import styles from "./HeadlineSectionDesktop.module.scss";
 import useWindowSize from "~/hooks/useWindowSize";
 
 export const HeadlineSectionDesktop = () => {
-  const { height } = useWindowSize();
+  const { width, height } = useWindowSize();
 
   const getOrderFormVariant = () => {
-    if (height < 1080) {
+    if (width < 1280 && height < 1000) {
       return "default";
     }
 

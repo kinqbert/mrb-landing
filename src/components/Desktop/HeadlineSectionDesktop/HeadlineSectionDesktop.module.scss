@@ -76,6 +76,7 @@ $bottom-bar-height: 70px;
 
 .bottomBar {
   width: 100%;
+  min-height: $bottom-bar-height;
   height: $bottom-bar-height;
 
   display: flex;
