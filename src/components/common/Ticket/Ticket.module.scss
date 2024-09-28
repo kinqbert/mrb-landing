@@ -1,6 +1,52 @@
-@import "../../../styles/colors.scss"; 
+@import "../../../styles/colors.scss";
 
 $ticket-pit-padding: 6px;
+$ticket-pit-padding-desktop: 30px;
+
+$mask: radial-gradient(8.16px at 11.2px 50%, #000 99%, #0000 101%) 0
+    calc(50% - 14px) / 51% 28px repeat-y,
+  radial-gradient(8.16px at -4.2px 50%, #0000 99%, #000 101%) 7px 50% /
+    calc(51% - 7px) 28px repeat-y,
+  radial-gradient(8.16px at calc(100% - 11.2px) 50%, #000 99%, #0000 101%) 100%
+    calc(50% - 14px) / 51% 28px repeat-y,
+  radial-gradient(8.16px at calc(100% + 4.2px) 50%, #0000 99%, #000 101%)
+    calc(100% - 7px) 50% / calc(51% - 7px) 28px repeat-y;
+
+$mask-large: radial-gradient(17.49px at 24px 50%, #000 99%, #0000 101%) 0
+    calc(50% - 30px) / 51% 60px repeat-y,
+  radial-gradient(17.49px at -9px 50%, #0000 99%, #000 101%) 15px 50% /
+    calc(51% - 15px) 60px repeat-y,
+  radial-gradient(17.49px at calc(100% - 24px) 50%, #000 99%, #0000 101%) 100%
+    calc(50% - 30px) / 51% 60px repeat-y,
+  radial-gradient(17.49px at calc(100% + 9px) 50%, #0000 99%, #000 101%)
+    calc(100% - 15px) 50% / calc(51% - 15px) 60px repeat-y;
+
+$clip-path: polygon(
+  0% 0%,
+  30% 0%,
+  calc(30% + $ticket-pit-padding) calc(0% + $ticket-pit-padding),
+  calc(30% + $ticket-pit-padding * 2) 0%,
+  100% 0%,
+  100% 100%,
+  calc(30% + $ticket-pit-padding * 2) 100%,
+  calc(30% + $ticket-pit-padding) calc(100% - $ticket-pit-padding),
+  30% 100%,
+  0% 100%
+);
+
+$clip-path-desktop: polygon(
+  0% 0%,
+  30% 0%,
+  calc(30% + $ticket-pit-padding-desktop) calc(0% + $ticket-pit-padding-desktop),
+  calc(30% + $ticket-pit-padding-desktop * 2) 0%,
+  100% 0%,
+  100% 100%,
+  calc(30% + $ticket-pit-padding-desktop * 2) 100%,
+  calc(30% + $ticket-pit-padding-desktop)
+    calc(100% - $ticket-pit-padding-desktop),
+  30% 100%,
+  0% 100%
+);
 
 .ticketWrapper {
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
@@ -19,29 +65,9 @@ $ticket-pit-padding: 6px;
 
   position: relative;
 
-  --mask: radial-gradient(8.16px at 11.2px 50%, #000 99%, #0000 101%) 0
-      calc(50% - 14px) / 51% 28px repeat-y,
-    radial-gradient(8.16px at -4.2px 50%, #0000 99%, #000 101%) 7px 50% /
-      calc(51% - 7px) 28px repeat-y,
-    radial-gradient(8.16px at calc(100% - 11.2px) 50%, #000 99%, #0000 101%)
-      100% calc(50% - 14px) / 51% 28px repeat-y,
-    radial-gradient(8.16px at calc(100% + 4.2px) 50%, #0000 99%, #000 101%)
-      calc(100% - 7px) 50% / calc(51% - 7px) 28px repeat-y;
-  -webkit-mask: var(--mask);
-  mask: var(--mask);
+  mask: $mask;
 
-  clip-path: polygon(
-    0% 0%,
-    30% 0%,
-    calc(30% + $ticket-pit-padding) calc(0% + $ticket-pit-padding),
-    calc(30% + $ticket-pit-padding * 2) 0%,
-    100% 0%,
-    100% 100%,
-    calc(30% + $ticket-pit-padding * 2) 100%,
-    calc(30% + $ticket-pit-padding) calc(100% - $ticket-pit-padding),
-    30% 100%,
-    0% 100%
-  );
+  clip-path: $clip-path;
 
   &::after {
     content: "";
@@ -55,12 +81,27 @@ $ticket-pit-padding: 6px;
   }
 }
 
+.ticketLarge {
+  height: 450px;
+
+  mask: $mask-large;
+  clip-path: $clip-path-desktop;
+
+  &::after {
+    left: calc(30% + $ticket-pit-padding-desktop);
+  }
+}
+
 .leftContent {
   width: calc(30% + $ticket-pit-padding);
 
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.leftContentLarge {
+  width: calc(30% + $ticket-pit-padding-desktop);
 }
 
 .leftText {
@@ -71,6 +112,16 @@ $ticket-pit-padding: 6px;
   font-family: Raleway;
   font-size: 16px;
   font-weight: 300;
+}
+
+.leftTextLarge {
+  color: #000;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 .rightContent {
@@ -94,6 +145,23 @@ $ticket-pit-padding: 6px;
   line-height: normal;
 }
 
+.rightContentTopTextLarge,
+.rightContentBottomTextLarge {
+  color: $black;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.rightContentTopTextLarge {
+  margin-bottom: 25px;
+}
+
+.rightContentBottomTextLarge {
+  margin-top: 25px;
+}
+
 .priceWrapper {
   display: flex;
   flex-direction: column;
@@ -106,6 +174,10 @@ $ticket-pit-padding: 6px;
   font-weight: 300;
 }
 
+.priceLarge {
+  font-size: 72.16px;
+}
+
 .priceDiscounted {
   color: $main-red;
   font-family: Raleway;
@@ -114,4 +186,8 @@ $ticket-pit-padding: 6px;
   font-weight: 300;
   line-height: normal;
   text-decoration: line-through;
+}
+
+.priceDiscountedLarge {
+  font-size: 30.067px;
 }

@@ -6,7 +6,9 @@ import {
   TargetAudienceElement3,
 } from "~/assets/svg/targetAudienceElements";
 import { crownEmoji, nailsEmoji, officeWomanEmoji } from "~/assets/images";
+import { PurchaseButton } from "~/components/common/PurchaseButton";
 
+// these items has to be rendered by hardcoding, because there are no other way to place bg arrows and emojis
 export const TargetAudienceSectionDesktop = () => {
   return (
     <section className={styles.targetAudienceSection}>
@@ -47,6 +49,9 @@ export const TargetAudienceSectionDesktop = () => {
             {targetAudienceData[2].description}
           </p>
         </div>
+      </div>
+      <div className={styles.purchaseButtonWrapper}>
+        <PurchaseButton size="large" />
       </div>
     </section>
   );

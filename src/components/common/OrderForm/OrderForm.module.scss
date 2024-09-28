@@ -1,6 +1,8 @@
-@import '../../../styles/colors.scss';
+@import "../../../styles/colors.scss";
 
-.formWrapper {
+/* #region DEFAULT */
+
+.default__formWrapper {
   height: 100%;
   padding: 28px 48px;
 
@@ -14,7 +16,7 @@
   box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.25);
 }
 
-.formHeadline {
+.default__formHeadline {
   color: $black;
   text-align: center;
   font-family: Raleway;
@@ -22,7 +24,7 @@
   font-weight: 300;
 }
 
-.price {
+.default__price {
   margin-top: 2px;
 
   color: $black;
@@ -32,7 +34,7 @@
   font-weight: 300;
 }
 
-.priceDiscounted {
+.default__priceDiscounted {
   color: $main-red;
   text-align: center;
   font-family: Raleway;
@@ -41,7 +43,7 @@
   text-decoration: line-through;
 }
 
-.separator {
+.default__separator {
   width: 100%;
   height: 1px;
 
@@ -53,7 +55,7 @@
   background-color: $main-blue;
 }
 
-.form {
+.default__form {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -61,7 +63,7 @@
   gap: 16px;
 }
 
-.submitButton {
+.default__submitButton {
   width: 164px;
 
   border-radius: 6px;
@@ -75,4 +77,212 @@
   font-family: Raleway;
   font-size: 20px;
   font-weight: 300;
+
+  cursor: pointer;
 }
+
+/* #endregion */
+
+/* #region HORIZONTAL */
+
+.horizontal__formWrapper {
+  max-width: 1340px;
+  display: flex;
+
+  padding: 52px 64px;
+
+  border-radius: 21.26px;
+  background: $registraion__form-bg;
+  box-shadow: 0px 4.252px 8.504px 4.252px rgba(0, 0, 0, 0.25);
+}
+
+.horizontal__leftContent {
+  flex: 1;
+}
+
+.horizontal__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 46px;
+}
+
+.horizontal__inputFields {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.horizontal__submitButton {
+  width: 320px;
+
+  padding: 10px 50px;
+
+  border-radius: 12.756px;
+  background: #c1c9f2;
+
+  color: $white;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 32px;
+  font-weight: 300;
+
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.horizontal__verticalSeparator {
+  height: max;
+  width: 1px;
+
+  margin-inline: 40px;
+
+  background-color: $main-blue;
+}
+
+.horizontal__rightContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.horizontal__rightContentTitle {
+  margin-bottom: 32px;
+
+  text-align: center;
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.horizontal__rightContentDescription {
+  text-align: center;
+  font-family: Raleway;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.horizontal__price {
+  margin-top: 16px;
+
+  color: $main-red;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 51px;
+  font-weight: 300;
+}
+
+.horizontal__priceDiscounted {
+  text-align: center;
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 300;
+  text-decoration: line-through;
+}
+
+/* #endregion */
+
+/* #region LARGE */
+
+.large__formWrapper {
+  max-width: 700px;
+
+  padding: 50px 80px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 19.025px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0px 3.805px 7.61px 3.805px rgba(0, 0, 0, 0.25);
+}
+
+.large__formHeadline {
+  text-align: center;
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.large__formDescription {
+  width: 500px;
+
+  margin-top: 4px;
+
+  text-align: center;
+  font-family: Raleway;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.large__price {
+  margin-top: 12px;
+
+  color: $main-red;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 46px;
+  font-weight: 300;
+}
+
+.large__priceDiscounted {
+  text-align: center;
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 300;
+  text-decoration: line-through;
+}
+
+.large__separator {
+  width: 100%;
+  height: 2px;
+
+  margin-top: 12px;
+
+  border: none;
+  outline: none;
+
+  background-color: $main-blue;
+}
+
+.large__form {
+  width: 100%;
+
+  margin-top: 64px;
+}
+
+.large__inputFields {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.large__submitButton {
+  width: 320px;
+
+  margin-top: 42px;
+
+  padding: 10px 50px;
+
+  border-radius: 12.756px;
+  background: #c1c9f2;
+
+  color: $white;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 32px;
+  font-weight: 300;
+
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+}
+
+/* #endregion */

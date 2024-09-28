@@ -10,12 +10,10 @@
   width: 100%;
   max-width: 1900px;
 
+  padding-inline: 40px;
+
   margin: 0 auto;
   margin-top: 40px;
-
-  background-color: $main-pink;
-
-  padding-bottom: 300px;
 }
 
 .titleWrapper {
@@ -58,14 +56,18 @@
   gap: 40px;
 
   padding-top: 24px;
-  padding-bottom: 44px;
-  padding-inline: 80px;
+  padding-bottom: 36px;
+  padding-inline: 40px;
 
   position: relative;
 
   border-radius: 32.414px;
   background: $white;
   box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.25);
+}
+
+.purchaseButtonWrapper {
+  margin-top: 110px;
 }
 
 .targetAudienceItemTitle {
@@ -86,8 +88,6 @@
 }
 
 .titleArrowElement1 {
-  @include DisappearOnNarrowScreen;
-
   width: 270px;
   height: 183px;
 
@@ -98,11 +98,11 @@
   overflow: hidden;
   object-fit: fill;
   object-position: right bottom;
+
+  @include DisappearOnNarrowScreen;
 }
 
 .titleEmojiElement1 {
-  @include DisappearOnNarrowScreen;
-
   z-index: -1;
 
   width: 70px;
@@ -111,11 +111,11 @@
   position: absolute;
   top: 40px;
   left: -260px;
+
+  @include DisappearOnNarrowScreen;
 }
 
 .arrowElement2 {
-  @include DisappearOnNarrowScreen;
-
   z-index: -1;
 
   position: absolute;
@@ -123,12 +123,12 @@
   bottom: -80px;
   right: 320px;
 
-  object-position: top center
+  object-position: top center;
+
+  @include DisappearOnNarrowScreen;
 }
 
 .emojiElement2 {
-  @include DisappearOnNarrowScreen;
-
   z-index: -1;
 
   width: 70px;
@@ -137,22 +137,22 @@
   position: absolute;
   bottom: -80px;
   left: 30px;
+
+  @include DisappearOnNarrowScreen;
 }
 
 .arrowElement3 {
-  @include DisappearOnNarrowScreen;
-
   z-index: -1;
 
   position: absolute;
   width: 680px;
   top: -80px;
   left: 310px;
+
+  @include DisappearOnNarrowScreen;
 }
 
 .emojiElement3 {
-  @include DisappearOnNarrowScreen;
-
   z-index: -1;
 
   width: 70px;
@@ -161,4 +161,6 @@
   position: absolute;
   top: -90px;
   right: -60px;
+
+  @include DisappearOnNarrowScreen;
 }

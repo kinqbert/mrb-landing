@@ -4,6 +4,8 @@ import starStruckEmoji from "./star-struck-emoji.png";
 import crownEmoji from "./crown-emoji.png";
 import nailsEmoji from "./nails-emoji.png";
 import officeWomanEmoji from "./office-woman-emoji.png";
+import sparklesEmoji from "./sparkles-emoji.png";
+import fleurDeLisEmoji from "./fleur-de-lis-emoji.png";
 import ukraineFlagEmoji from "./ukraine-flag-emoji.png";
 
 export {
@@ -13,5 +15,7 @@ export {
   crownEmoji,
   nailsEmoji,
   officeWomanEmoji,
+  sparklesEmoji,
+  fleurDeLisEmoji,
   ukraineFlagEmoji,
 };

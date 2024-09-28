@@ -2,6 +2,11 @@ import {
   HeadlineSectionDesktop,
   TargetAudienceSectionDesktop,
 } from "../Desktop";
+import { FaqSectionDesktop } from "../Desktop/FaqSectionDesktop/FaqSectionDesktop";
+import { FormSectionDesktop } from "../Desktop/FormSectionDesktop";
+import { ResultsSectionDesktop } from "../Desktop/ResultsSectionDesktop";
+import { TicketSectionDesktop } from "../Desktop/TicketSectionDesktop";
+import { FooterSectionDesktop } from "../Desktop/FooterSectionDesktop";
 import {
   CourseProgramSectionMobile,
   FaqSectionMobile,
@@ -15,6 +20,9 @@ import {
 } from "../Mobile";
 
 import { useEffect, useState } from "react";
+
+import styles from './MainPageContent.module.scss';
+import { DesktopGradientBackground } from "../common/DesktopGradientBackground/DesktopGradientBackground";
 
 export const MainPageContent = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -34,7 +42,7 @@ export const MainPageContent = () => {
 
   if (isMobile) {
     return (
-      <div className="container">
+      <>
         <HeadlineSectionMobile />
         <ProblemsSectionMobile />
         <TargetAudienceSectionMobile />
@@ -44,14 +52,20 @@ export const MainPageContent = () => {
         <ReviewsSectionMobile />
         <FaqSectionMobile />
         <TicketSectionMobile />
-      </div>
+      </>
     );
   }
 
   return (
-    <div className="container">
+    <div className={styles.mainPageDesktopContainer}>
       <HeadlineSectionDesktop />
       <TargetAudienceSectionDesktop />
+      <ResultsSectionDesktop />
+      <TicketSectionDesktop />
+      <FaqSectionDesktop />
+      <FormSectionDesktop />
+      <FooterSectionDesktop />
+      <DesktopGradientBackground />
     </div>
   );
 };

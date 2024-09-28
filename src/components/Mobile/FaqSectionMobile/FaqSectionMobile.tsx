@@ -1,4 +1,4 @@
-import { FaqAccordion } from "./FaqAccordion";
+import { FaqAccordion } from "../../common/FaqAccordion";
 import styles from "./FaqSectionMobile.module.scss";
 
 export const FaqSectionMobile = () => {

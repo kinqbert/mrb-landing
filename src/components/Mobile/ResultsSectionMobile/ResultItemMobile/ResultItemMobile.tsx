@@ -1,18 +1,18 @@
-import styles from "./ResultItem.module.scss";
+import styles from "./ResultItemMobile.module.scss";
 
-interface Props {
+export interface ResultItemProps {
   title: string;
   description: string;
   borderVariant?: "left" | "right";
   circlePosition?: "left" | "right";
 }
 
-export const ResultItem = ({
+export const ResultItemMobile = ({
   title,
   description,
   borderVariant,
   circlePosition,
-}: Props) => {
+}: ResultItemProps) => {
   const getResultItemClass = () => {
     if (borderVariant === "left") {
       return [styles.resultItem, styles.borderLeft].join(" ");

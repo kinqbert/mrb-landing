@@ -18,6 +18,10 @@
   font-weight: 300;
 }
 
+.inputTitleLarge {
+  font-size: 26px;
+}
+
 .inputWrapper {
   width: 100%;
 
@@ -43,12 +47,28 @@
   }
 }
 
+.inputFieldLarge {
+  height: 64px;
+
+  padding-inline: 8px;
+
+  border: 2.126px solid $main-blue;
+  border-radius: 8px;
+
+  font-size: 25.512px;
+  font-weight: 300;
+}
+
 .inputError {
   border: 1px solid red;
 }
 
 .inputFieldTel {
   padding-left: 48px;
+}
+
+.inputFieldTelLarge {
+  padding-left: 96px;
 }
 
 .phoneNumberOverlay {
@@ -63,16 +83,33 @@
   align-items: center;
 }
 
+.phoneNumberOverlayLarge {
+  left: 8px;
+}
+
 .ukraineFlag {
   width: 14px;
   height: 14px;
+}
 
-  gap: 2px;
+.ukraineFlagLarge {
+  width: 24px;
+  height: 24px;
 }
 
 .numberStart {
+  margin-left: 4px;
+
   text-align: center;
   font-family: Raleway;
   font-size: 12px;
   font-weight: 300;
+}
+
+.numberStartLarge {
+  font-family: Raleway;
+  font-size: 25.512px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }

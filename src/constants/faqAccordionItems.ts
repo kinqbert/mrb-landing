@@ -1,8 +1,4 @@
-import { useState } from "react";
-import styles from "./FaqAccordion.module.scss";
-import { AccordionArrow } from "~/assets/svg";
-
-const accordionItems = [
+export const faqAccordionItems = [
   {
     title:
       "Які конкретні навички і техніки я зможу освоїти після завершення цього курсу?",
@@ -55,54 +51,3 @@ const accordionItems = [
       "Основний акцент при створенні курсу було допомогти навіть тим майстрам, які тільки вчора пройшли профільні курси і потребують нових клієнтів прямо зараз без вкладень в рекламу $10000",
   },
 ];
-
-export const FaqAccordion = () => {
-  const [activeItemIndex, setActiveItemIndex] = useState<number | null>(null);
-
-  const handleAccordionItemClick = (index: number) => {
-    if (activeItemIndex === index) {
-      setActiveItemIndex(null);
-    } else {
-      setActiveItemIndex(index);
-    }
-  };
-
-  const getIconWrapperStyles = (index: number) => {
-    if (activeItemIndex === index) {
-      return [styles.iconWrapper, styles.iconWrapperActive].join(" ");
-    } else {
-      return styles.iconWrapper;
-    }
-  };
-
-  return (
-    <div className={styles.accordion}>
-      {accordionItems.map((item, index) => (
-        <div
-          key={index}
-          className={`${styles.accordionItem} ${
-            activeItemIndex === index ? styles.accordionItemActive : ""
-          }`}
-          onClick={() => handleAccordionItemClick(index)}
-        >
-          <div className={styles.accordionItemHeader}>
-            <span
-              className={styles.accordionItemTitle}
-              onClick={() =>
-                setActiveItemIndex(index === activeItemIndex ? null : index)
-              }
-            >
-              {item.title}
-            </span>
-            <div className={getIconWrapperStyles(index)}>
-              <img src={AccordionArrow} />
-            </div>
-          </div>
-          <div className={styles.accordionItemContent}>
-            <p className={styles.accordionItemText}>{item.textContent}</p>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-};

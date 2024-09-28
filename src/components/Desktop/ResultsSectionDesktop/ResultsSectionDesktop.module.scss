@@ -1,0 +1,24 @@
+@import "../../../styles/colors.scss"; 
+
+.resultsSection {
+  margin-top: 70px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  padding-inline: 20px;
+  margin-inline: auto;
+}
+
+.sectionTitle {
+  width: 780px;
+  margin-inline: auto;
+  margin-bottom: 32px;
+
+  color: $white;
+  text-align: center;
+  font-family: "Open Sans Condensed";
+  font-size: 48px;
+  font-weight: 700;
+}
