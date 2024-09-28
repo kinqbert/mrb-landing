@@ -19,24 +19,12 @@ import {
   TargetAudienceSectionMobile,
 } from "../Mobile";
 
-import { useEffect, useState } from "react";
-
 import styles from "./MainPageContent.module.scss";
 import { DesktopGradientBackground } from "../common/DesktopGradientBackground/DesktopGradientBackground";
+import useWindowSize from "~/hooks/useWindowSize";
 
 export const MainPageContent = () => {
-  const [width, setWidth] = useState(window.innerWidth);
-
-  const handleWindowSizeChange = () => {
-    setWidth(window.innerWidth);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", handleWindowSizeChange);
-    return () => {
-      window.removeEventListener("resize", handleWindowSizeChange);
-    };
-  }, []);
+  const { width } = useWindowSize();
 
   const isMobile = width < 1024;
 

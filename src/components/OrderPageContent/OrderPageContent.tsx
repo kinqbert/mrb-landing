@@ -2,21 +2,10 @@ import { ArrowLeftCircled } from "~/assets/svg";
 import styles from "./OrderPageContent.module.scss";
 import { Link } from "react-router-dom";
 import { OrderForm } from "../common/OrderForm";
-import { useEffect, useState } from "react";
+import useWindowSize from "~/hooks/useWindowSize";
 
 export const OrderPageContent = () => {
-  const [width, setWidth] = useState(window.innerWidth);
-
-  const handleWindowSizeChange = () => {
-    setWidth(window.innerWidth);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", handleWindowSizeChange);
-    return () => {
-      window.removeEventListener("resize", handleWindowSizeChange);
-    };
-  }, []);
+  const {width} = useWindowSize();
 
   const getOrderFormVariant = () => {
     const isMobile = width < 1024;

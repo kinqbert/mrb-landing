@@ -2,21 +2,10 @@ import { OrderForm } from "~/components/common/OrderForm";
 import { PurchaseButton } from "~/components/common/PurchaseButton";
 
 import styles from "./HeadlineSectionDesktop.module.scss";
-import { useEffect, useState } from "react";
+import useWindowSize from "~/hooks/useWindowSize";
 
 export const HeadlineSectionDesktop = () => {
-  const [width, setWidth] = useState(window.innerWidth);
-
-  const handleWindowSizeChange = () => {
-    setWidth(window.innerHeight);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", handleWindowSizeChange);
-    return () => {
-      window.removeEventListener("resize", handleWindowSizeChange);
-    };
-  }, []);
+  const { width } = useWindowSize();
 
   const getOrderFormVariant = () => {
     if (width < 1080) {
