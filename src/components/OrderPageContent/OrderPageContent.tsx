@@ -7,7 +7,7 @@ export const OrderPageContent = () => {
   return (
     <div className={styles.container}>
       <div className={styles.formWrapper}>
-        <OrderForm />
+        <OrderForm variant="large" />
       </div>
       <Link className={styles.arrowBackWrapper} to="..">
         <img src={ArrowLeftCircled} />
