@@ -4,7 +4,7 @@ interface Props {
   variant?: "small" | "large";
 }
 
-export const Ticket = ({ variant }: Props) => {
+export const Ticket = ({ variant = "small" }: Props) => {
   const getTicketStyles = () => {
     if (variant === "small") {
       return styles.ticket;

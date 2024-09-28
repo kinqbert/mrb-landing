@@ -10,7 +10,7 @@ import { FooterSectionDesktop } from "../Desktop/FooterSectionDesktop";
 import {
   CourseProgramSectionMobile,
   FaqSectionMobile,
-  ProblemsSectionMobile,
+  FeaturesSectionMobile,
   ResultsSectionMobile,
   ReviewsSectionMobile,
   TicketSectionMobile,
@@ -21,7 +21,7 @@ import {
 
 import { useEffect, useState } from "react";
 
-import styles from './MainPageContent.module.scss';
+import styles from "./MainPageContent.module.scss";
 import { DesktopGradientBackground } from "../common/DesktopGradientBackground/DesktopGradientBackground";
 
 export const MainPageContent = () => {
@@ -44,7 +44,7 @@ export const MainPageContent = () => {
     return (
       <>
         <HeadlineSectionMobile />
-        <ProblemsSectionMobile />
+        <FeaturesSectionMobile />
         <TargetAudienceSectionMobile />
         <WhyUsSectionMobile />
         <CourseProgramSectionMobile />

@@ -107,6 +107,8 @@ $clip-path-desktop: polygon(
 .leftText {
   transform: rotate(-90deg);
 
+  max-width: 140px;
+
   color: $black;
   text-align: center;
   font-family: Raleway;
@@ -115,13 +117,10 @@ $clip-path-desktop: polygon(
 }
 
 .leftTextLarge {
+  max-width: 340px;
+
   color: #000;
-  text-align: center;
-  font-family: Raleway;
   font-size: 40px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
 }
 
 .rightContent {

@@ -23,7 +23,12 @@ export const HeadlineSectionMobile = () => {
       <div className={styles.bottomIconBadgeWrapper}>
         <img src={ArrowDownEllipse} />
       </div>
+
       <div className={styles.background}></div>
+      <div className={styles.calloutWrapper}>
+        Почни власну справу або розшир свою студiю до успiшного салону краси без
+        зайвих витрат та страхiв.
+      </div>
     </section>
   );
 };

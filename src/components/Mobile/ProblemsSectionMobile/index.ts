@@ -1,1 +1,1 @@
-export * from "./ProblemsSectionMobile";
+export * from "./FeaturesSectionMobile";

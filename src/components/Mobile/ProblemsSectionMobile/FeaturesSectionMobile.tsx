@@ -1,29 +1,9 @@
-import {
-  moneyMouthEmoji,
-  moneyWithWingsEmoji,
-  starStruckEmoji,
-} from "~/assets/images";
+import { features } from "~/constants/features";
 import { FeatureListItem } from "./FeatureListItem";
-import styles from "./ProblemsSectionMobile.module.scss";
+import styles from "./FeaturesSectionMobile.module.scss";
 import { PhoneIcon } from "~/assets/svg";
 
-export const ProblemsSectionMobile = () => {
-  const features = [
-    {
-      title: "Зменшити витрати на приміщення.",
-      icon: moneyMouthEmoji,
-    },
-    {
-      title: "Залучити і зберегти клієнтів.",
-      icon: starStruckEmoji,
-    },
-    {
-      title:
-        "Ефективно використовувати рекламу без великих фінансових вкладень.",
-      icon: moneyWithWingsEmoji,
-    },
-  ];
-
+export const FeaturesSectionMobile = () => {
   return (
     <section className={styles.problemsSection}>
       <div className={styles.container}>

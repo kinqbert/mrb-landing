@@ -6,7 +6,7 @@ import styles from "./TicketSectionDesktop.module.scss";
 export const TicketSectionDesktop = () => {
   return (
     <section className={styles.ticketSection}>
-      <Ticket />
+      <Ticket variant="large" />
       <div className={styles.purchaseButtonWrapper}>
         <PurchaseButton size="medium" />
       </div>
