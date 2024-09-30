@@ -20,7 +20,6 @@ import {
 } from "../Mobile";
 
 import styles from "./MainPageContent.module.scss";
-import { DesktopGradientBackground } from "../common/DesktopGradientBackground/DesktopGradientBackground";
 import useWindowSize from "~/hooks/useWindowSize";
 
 export const MainPageContent = () => {
@@ -53,7 +52,6 @@ export const MainPageContent = () => {
       <FaqSectionDesktop />
       <FormSectionDesktop />
       <FooterSectionDesktop />
-      <DesktopGradientBackground />
     </div>
   );
 };

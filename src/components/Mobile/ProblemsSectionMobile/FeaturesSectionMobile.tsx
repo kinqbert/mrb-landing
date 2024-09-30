@@ -2,6 +2,7 @@ import { features } from "~/constants/features";
 import { FeatureListItem } from "./FeatureListItem";
 import styles from "./FeaturesSectionMobile.module.scss";
 import { PhoneIcon } from "~/assets/svg";
+import { Link } from "react-router-dom";
 
 export const FeaturesSectionMobile = () => {
   return (
@@ -24,9 +25,11 @@ export const FeaturesSectionMobile = () => {
             />
           ))}
         </ul>
-        <div className={styles.phoneIconWrapper}>
-          <img src={PhoneIcon} />
-        </div>
+        <Link to="order">
+          <div className={styles.phoneIconWrapper}>
+            <img src={PhoneIcon} />
+          </div>
+        </Link>
       </div>
     </section>
   );

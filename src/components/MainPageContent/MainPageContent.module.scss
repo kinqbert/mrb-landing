@@ -1,7 +1,11 @@
+@import '../../styles/colors.scss';
+
 .mainPageDesktopContainer {
   z-index: 0;
 
   position: relative;
 
   background-color: transparent;
+
+  background: linear-gradient(80deg, $main-pink 37.53%, $main-blue 91.08%);
 }
