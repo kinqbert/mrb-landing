@@ -1,7 +1,7 @@
 @import "../../../styles/colors.scss";
 
 $ticket-pit-padding: 6px;
-$ticket-pit-padding-desktop: 30px;
+$ticket-pit-padding-desktop: 20px;
 
 $mask: radial-gradient(8.16px at 11.2px 50%, #000 99%, #0000 101%) 0
     calc(50% - 14px) / 51% 28px repeat-y,
@@ -82,7 +82,7 @@ $clip-path-desktop: polygon(
 }
 
 .ticketLarge {
-  height: 450px;
+  height: 335px;
 
   mask: $mask-large;
   clip-path: $clip-path-desktop;
@@ -120,7 +120,7 @@ $clip-path-desktop: polygon(
   max-width: 340px;
 
   color: #000;
-  font-size: 40px;
+  font-size: 34px;
 }
 
 .rightContent {
@@ -149,7 +149,7 @@ $clip-path-desktop: polygon(
   color: $black;
   text-align: center;
   font-family: Raleway;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 300;
 }
 
@@ -174,7 +174,7 @@ $clip-path-desktop: polygon(
 }
 
 .priceLarge {
-  font-size: 72.16px;
+  font-size: 54px;
 }
 
 .priceDiscounted {
@@ -188,5 +188,5 @@ $clip-path-desktop: polygon(
 }
 
 .priceDiscountedLarge {
-  font-size: 30.067px;
+  font-size: 26px;
 }
