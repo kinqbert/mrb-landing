@@ -21,6 +21,7 @@ import {
 
 import styles from "./MainPageContent.module.scss";
 import useWindowSize from "~/hooks/useWindowSize";
+import { BackgroundMobile } from "../Mobile/BackgroundMobile";
 
 export const MainPageContent = () => {
   const { width } = useWindowSize();
@@ -40,6 +41,7 @@ export const MainPageContent = () => {
         <FaqSectionMobile />
         <TicketSectionMobile />
         <FooterSection />
+        <BackgroundMobile />
       </div>
     );
   }
