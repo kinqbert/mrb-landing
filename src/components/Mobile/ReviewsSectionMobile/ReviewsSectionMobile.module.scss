@@ -2,11 +2,11 @@
 
 .reviewsSection {
   margin-top: 8px;
-
-  padding-inline: 8px;
 }
 
 .title {
+  padding-inline: 8px;
+
   color: $black;
   font-family: Raleway;
   font-size: 32px;
@@ -16,6 +16,7 @@
 
 .subText {
   margin-top: 8px;
+  padding-inline: 8px;
 
   color: $black;
   font-family: Raleway;
@@ -24,9 +25,13 @@
   text-align: left;
 }
 
-.reviewsList {
+.reviewsListWrapper {
   margin-top: 8px;
-  
+
   display: flex;
   gap: 8px;
+}
+
+.slide {
+  padding: 8px;
 }

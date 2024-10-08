@@ -7,7 +7,7 @@ interface Props {
   size?: "small" | "large";
 }
 
-export const FaqAccordion = ({ size }: Props) => {
+export const FaqAccordion = ({ size = "small" }: Props) => {
   const [activeItemIndex, setActiveItemIndex] = useState<number | null>(null);
 
   const handleAccordionItemClick = (index: number) => {

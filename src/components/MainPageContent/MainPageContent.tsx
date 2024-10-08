@@ -6,7 +6,7 @@ import { FaqSectionDesktop } from "../Desktop/FaqSectionDesktop/FaqSectionDeskto
 import { FormSectionDesktop } from "../Desktop/FormSectionDesktop";
 import { ResultsSectionDesktop } from "../Desktop/ResultsSectionDesktop";
 import { TicketSectionDesktop } from "../Desktop/TicketSectionDesktop";
-import { FooterSectionDesktop } from "../Desktop/FooterSectionDesktop";
+import { FooterSection } from "../common/FooterSection";
 import {
   CourseProgramSectionMobile,
   FaqSectionMobile,
@@ -29,7 +29,7 @@ export const MainPageContent = () => {
 
   if (isMobile) {
     return (
-      <>
+      <div className={styles.mainPageMobileContainer}>
         <HeadlineSectionMobile />
         <FeaturesSectionMobile />
         <TargetAudienceSectionMobile />
@@ -39,7 +39,8 @@ export const MainPageContent = () => {
         <ReviewsSectionMobile />
         <FaqSectionMobile />
         <TicketSectionMobile />
-      </>
+        <FooterSection />
+      </div>
     );
   }
 
@@ -51,7 +52,7 @@ export const MainPageContent = () => {
       <TicketSectionDesktop />
       <FaqSectionDesktop />
       <FormSectionDesktop />
-      <FooterSectionDesktop />
+      <FooterSection />
     </div>
   );
 };

@@ -14,7 +14,7 @@
 
   &.accordionItemActive {
     & .accordionItemContent {
-      max-height: 35px;
+      max-height: 100px;
     }
   }
 }
@@ -30,7 +30,7 @@
 }
 
 .accordionItemHeader {
-  padding: 6px 10px;
+  padding: 12px 20px;
 
   display: flex;
   align-items: center;
@@ -45,7 +45,7 @@
 
 .accordionItemHeaderLarge {
   border-radius: 16px;
-  padding: 10px 20px;
+  padding: 20px 30px;
 }
 
 .accordionItemTitle {
@@ -56,13 +56,13 @@
   color: $black;
   text-align: center;
   font-family: Raleway;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 300;
   line-height: 84.557%;
 }
 
 .accordionItemTitleLarge {
-  font-size: 34.379px;
+  font-size: 32px;
 }
 
 .accordionItemNumber {
@@ -80,22 +80,21 @@
   transition: max-height 0.3s linear;
 }
 
-.accordionItemContentLarge {
-}
-
 .accordionItemText {
-  padding: 6px;
+  padding: 12px;
 
   color: $black;
   text-align: center;
   font-family: Raleway;
-  font-size: 8px;
+  font-size: 15px;
   font-weight: 300;
   line-height: 84.557%;
 }
 
 .accordionItemTextLarge {
-  font-size: 28px;
+  padding: 20px;
+
+  font-size: 26px;
 }
 
 .iconWrapper {

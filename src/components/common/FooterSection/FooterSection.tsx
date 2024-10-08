@@ -1,6 +1,6 @@
-import styles from "./FooterSectionDesktop.module.scss";
+import styles from "./FooterSection.module.scss";
 
-export const FooterSectionDesktop = () => {
+export const FooterSection = () => {
   return (
     <p className={styles.footerText}>
       ФОП Прозорова Софія Сергіївна
@@ -17,6 +17,7 @@ export const FooterSectionDesktop = () => {
       і результати. Реєструючись на даному сайті, ви знімаєте з нас
       відповідальність за ваші дії та результати. Всі права захищені. Будь-яке
       копіювання матеріалів дозволяється тільки з дозволу організаторів.
+      <br />
       <br />
       IMPORTANT: Do not enter your name and email until you have read the Legal
       Disclaimer. We are not able to make any guarantees and we will not make

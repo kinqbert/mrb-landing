@@ -116,12 +116,13 @@
 }
 
 .calloutWrapper {
-  width: 186px;
+  width: 90%;
   height: 100px;
 
   position: absolute;
-  bottom: 130px;
-  right: 10px;
+  bottom: 180px;
+  right: 50%;
+  transform: translateX(50%);
 
   padding: 5px;
 
@@ -132,9 +133,9 @@
   color: $text__grey;
   text-align: center;
   font-family: "Sansation Light";
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 300;
-  line-height: 85.949%; 
+  line-height: 92%; 
 
   border-radius: 15px;
   border: 2px solid #fff;
